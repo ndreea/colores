@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px;
+}
+
+.header h1{
+    background-color: #ffffffb1;
+    padding: 0 10px;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: 400;
+    color:#ef4135;
+}
+
+.header span{
+    color: #0050a4;
+}
+
+.header a:not(:first-child){
+    color: #1d1d1b;
+    text-decoration: underline;
+}
+
+.header a:nth-child(2){
+    padding: 0px;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+}
+
+.lista li{
+    flex-grow: 1;
+    position: relative;
+}
+
+.lista a{
+    display: block;
+    height: 100vh;
+    font-weight: 500;
+    font-size: 8em;
+    text-decoration: none;
+    position: relative;
+}
+
+.lista a.azul{
+    background: url("../img/azul.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.lista a.blanco{
+    background: url("../img/blanco.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.lista a.rojo{
+    background: url("../img/rojo.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.lista a.azul span,
+.lista a.blanco span,
+.lista a.rojo span{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.lista a.azul span{
+    color: #0050a4;
+}
+
+.lista a.blanco span{
+    color: #fff;
+}
+
+.lista a.rojo span{
+    color: #ef4135;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1201px){ /* ORDENADOR */
+
+    .lista a{
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 901px){ /* TABLET */
+
+    .lista{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista a{
+        height: 33.33vh;
+        width: 100%
+    }
+
+    .lista a.azul{
+        background: url("../img/azul.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .lista a.blanco{
+        background: url("../img/blanco.jpg") no-repeat center;
+        background-size: cover;
+    }
+    
+    .lista a.rojo{
+        background: url("../img/rojo.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .lista a.azul span,
+    .lista a.blanco span,
+    .lista a.rojo span{
+        bottom: 10px;
+    }   
+
+    .lista a.azul span{
+        text-shadow: 1px 1px 2px #1d1d1b;
+    }
+    
+    .lista a.blanco span{
+        text-shadow: 1px 1px 2px #1d1d1b;
+    }
+    
+    .lista a.rojo span{
+        text-shadow: 1px 1px 2px #1d1d1b;
+    }
+
+}
+
+@media screen and (max-width: 501px){ /* MÓVIL*/
+
+    .header{
+        padding: 10px;
+    }
+
+    .header h1{
+        padding: 0 10px;
+    }
+
+    .header span{
+        display: block;
+    }
+
+    .header a:not(:first-child){
+        display: none;
+    }
+    
+    .lista a{
+        font-size: 4em;
+    }
+
+    .lista a.azul span,
+    .lista a.blanco span,
+    .lista a.rojo span{
+        bottom: 5px;
+        right: 20px;
+    }  
+
+    .lista a.azul span{
+        text-shadow: 0.5px 0.5px 1px #1d1d1b;
+    }
+    
+    .lista a.blanco span{
+        text-shadow: 0.5px 0.5px 1px #1d1d1b;
+    }
+    
+    .lista a.rojo span{
+        text-shadow: 0.5px 0.5px 1px #1d1d1b;
+    }
+}
+
+
+

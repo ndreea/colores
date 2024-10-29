@@ -1,0 +1,15 @@
+Tipografía: Oswald, pesos:400,500
+
+body:400
+navegación:500
+
+Colores
+Azul: #0050a4
+Blanco: #fff
+Rojo: #ef4135
+
+Gradients:
+to top
+Azul: #003670, #0050a4
+Blanco: #999, #eee
+Rojo: #bd332a, #ff4135

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    background: linear-gradient(to top, #999, #eee);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    padding: 20px;
+}
+
+.header h1{
+    background-color: #ffffffb1;
+    padding: 0 10px;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: 400;
+    color:#ef4135;
+}
+
+.header span{
+    color: #0050a4;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.menu li{
+    white-space: nowrap;
+    padding-right: 40px;
+}
+
+.menu a{
+    color: #1d1d1b;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.contenedor img{
+    width: 500px;
+    border: 10px solid #fff;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.contenedor p{
+    color: #1d1d1bed;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 951px){ /* TABLET - MENÚ */
+
+    .header{
+        display: block;
+    }
+
+    .header h1{
+        display: inline-block;
+    }
+
+    .menu{
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 751px){ /* TABLET - IMAGEN*/
+
+    .header{
+        display: block;
+    }
+
+    .header h1{
+        display: inline-block;
+    }
+
+    .menu{
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        padding-top: 20px;
+    }
+
+    .contenedor{
+        width: 450px;
+    }
+
+    .contenedor img{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 501px){ /* MOVIL */
+
+    .header{
+        padding: 10px;
+    }
+
+    .header span{
+        display: block;
+    }
+
+    .contenedor{
+        width: 400px;
+    }
+
+    .contenedor img{
+        width: 400px;
+    }
+}
+
