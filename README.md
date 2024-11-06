@@ -5,8 +5,7 @@ Este repositorio contiene una página web totalmente responsive, desarrollado co
 Esta página te permite navegar por los diferentes colores que tiene y descrubir la biografía de su propietario. La interfaz se ha diseñado de manera sencilla para practicar las habilidades adquiridas.
 
 ## Tecnologías utilizadas
-HTML: para la estructura de la página.
-CSS: para el estilo y diseño visual de la página.
+HTML: para la estructura de la página. | CSS: para el estilo y diseño visual de la página.
 
 ## Propósito
 Este proyecto tiene como objetivo practicar y demostrar habilidades en HTML y CSS adquiridas en el curso de Front End.
